@@ -1,0 +1,49 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: FastAPI",
+            "type": "python",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "engine:app",
+                "--host",
+                "127.0.0.1",
+                "--port",
+                "8000"
+            ],
+            "cwd": "${workspaceFolder}/backend",
+            "env": {
+                "PYTHONUNBUFFERED": "1"
+            },
+            "justMyCode": true,
+            "python": "${workspaceFolder}/backend/venv/Scripts/python.exe"
+        },
+        {
+            "name": "Tauri: React Frontend",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "tauri:dev"
+            ],
+            "cwd": "${workspaceFolder}/frontend",
+            "env": {
+                "BROWSER": "none"
+            },
+            "console": "integratedTerminal"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Full Stack: PHE Digital Twin",
+            "configurations": [
+                "Python: FastAPI",
+                "Tauri: React Frontend"
+            ],
+            "stopAll": true
+        }
+    ]
+}

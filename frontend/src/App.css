@@ -1,0 +1,138 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #1c1e21;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background: white;
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.upload-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.controls-bar {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.playback-controls {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.play-btn {
+  background: #28a745;
+  color: white;
+  min-width: 140px;
+}
+
+.timeline-slider {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.scrubber-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.timestamp-label {
+  font-family: monospace;
+  font-weight: bold;
+  color: #666;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 20px;
+}
+
+.stats-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-mini {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.card-mini h3 {
+  margin: 0 0 10px 0;
+  font-size: 0.9rem;
+  color: #65676b;
+  text-transform: uppercase;
+}
+
+.predictive-date {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.fouling-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.fouling-value.alarm {
+  color: #dc3545;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.chart-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.chart-card.wide {
+  grid-column: span 2;
+}
+
+.chart-card h3 {
+  margin-top: 0;
+  font-size: 1rem;
+  color: #444;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
